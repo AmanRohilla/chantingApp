@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_color"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true">
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="40dp"
+        android:text="How Many Times You Chanting Today?"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:elevation="10dp"
+        android:textSize="50dp" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:elevation="20dp"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/noob"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:text="11 TIMES (I AM NOOB !)"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/medium"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:text="21 TIMES (BEGINNER !)"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/average"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:text="51 TIMES (IMPROVING !)"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/aboveAverage"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:text="101 TIMES (PUSHING MYSELF !)"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/letMeDecide"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:text="LET ME DECIDE"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:elevation="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startButton"
+            android:background="@drawable/custom_button"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:text="START"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
