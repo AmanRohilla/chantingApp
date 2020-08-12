@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
@@ -76,8 +77,14 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                chantCount = Integer.parseInt(input.getText().toString());
-                goToNextActivity(chantCount);
+                if(Integer.parseInt(input.getText().toString()) > 100000){
+                    Toast.makeText(getApplicationContext(), "Enter some low value.", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    chantCount = Integer.parseInt(input.getText().toString());
+                    goToNextActivity(chantCount);
+                }
+
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

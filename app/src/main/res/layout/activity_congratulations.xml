@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_color"
+    android:layout_height="match_parent"
+    tools:context=".CongratulationsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@drawable/custom_box"
+        android:id="@+id/tapOnScreenView"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:text="CONGRATULATIONS !!"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:id="@+id/animationScreen"
+        android:visibility="visible"
+        android:layout_marginTop="150dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="congrats_animation.json"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:elevation="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chantAgain"
+        android:background="@drawable/custom_box"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:text="CHANT AGAIN"/>
+
+
+</LinearLayout>
